@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Information</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a9e68181b5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="site-container">
+        <div id="logo">
+            <img src="./assets/logo.png" alt="logo">
+        </div>
+        <nav>
+          <div class="mobile">
+            <img src="./assets/logo.png" alt="" style="width: 80px; height: 40px;">
+          <i class="fas fa-bars" onclick="toggleMenu()" id="ham-menu"></i>
+          </div>
+            <ul id="menu">
+                <li><a href="#" onclick="goBackToProducts()"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#" onclick="goBackToProducts()">Domov</a></li>
+                <li><a href="under_constructtion.html" onclick="selectPage()">O nas</a></li>
+                <li><a href="under_constructtion.html" onclick="selectPage()">Kontakt</a></li>
+                <li><a href="under_constructtion.html" onclick="selectPage()">Pišite nam</a></li>
+                <li><a href="#" onclick="goBackToProducts()">IZDELKI</a></li>
+            </ul>
+        </nav>
+        <div class="container" id="productContainer">
+            <div class="product">
+                <div class="content">
+                    <img src="./assets/img.png" alt="img" style="width: 100%; ">
+                    <div class="headings">
+                        <h1>IZDELEK 1</h1>
+                        <h2>Podnaslov izdelka 1</h2>
+                    </div>
+                    <p>Odstavek 1. Vivamus sagittis lacus vel augue 
+                        laoreet rutrum faucibus dolor auctor. Integer 
+                        posuere erat a ante venenatis dapibus posuere 
+                        velit aliquet. Nullam quis risus eget urna mollis 
+                        ornare vel eu leo.
+                        <br> <br>
+                        Odstavek 2. Vivamus sagittis lacus vel augue 
+                        laoreet rutrum faucibus dolor auctor. 
+                     </p>
+                </div>
+                <button onclick="showProductInfo(1)"><i class="fa-solid fa-plus"></i>VEČ O IZDELKU 1</button>
+            </div>
+            <div class="product">
+                <div class="content">
+                    <img src="./assets/img.png" alt="img" style="width: 100%;">
+                    <div class="headings">
+                        <h1>IZDELEK 2</h1>
+                        <h2>Podnaslov izdelka 2</h2>
+                    </div>
+                    <p> Odstavek 1. Vivamus sagittis lacus vel augue laoreet rutrum faucibus 
+                        dolor auctor. Integer posuere erat a ante venenatis dapibus posuere 
+                        velit aliquet. Nullam quis risus eget urna mollis ornare vel eu leo.
+                        <br><br>
+                        Odstavek 2. Vivamus sagittis lacus vel augue laoreet rutrum 
+                        faucibus dolor auctor.
+                        <br><br>
+                        Odstavek 2. Vivamus sagittis lacus vel augue laoreet rutrum faucibus 
+                        dolor auctor.
+
+                     </p>
+                </div>
+                <button onclick="showProductInfo(2)"><i class="fa-solid fa-plus"></i>VEČ O IZDELKU 2</button>
+            </div>
+            <div class="product">
+                <div class="content">
+                    <img src="./assets/img.png" alt="img" style="width: 100%;">
+                    <div class="headings">
+                        <h1>IZDELEK 3</h1>
+                        <h2>Podnaslov izdelka 3</h2>
+                    </div>
+                    <p> Odstavek 1. Vivamus sagittis lacus vel augue laoreet rutrum 
+                        faucibus dolor auctor. Integer posuere erat a ante venenatis 
+                        dapibus posuere velit aliquet. Nullam quis risus eget urna 
+                        mollis ornare vel eu leo.
+                        <br><br>
+                        Odstavek 2. Vivamus sagittis lacus vel augue laoreet rutrum 
+                        faucibus dolor auctor.
+                        <br><br>
+                        Odstavek 2. Vivamus sagittis lacus vel augue laoreet rutrum 
+                        faucibus dolor auctor.
+                        <br><br>
+                        Odstavek 2. Vivamus sagittis lacus vel augue laoreet rutrum 
+                        aucibus dolor auctor.
+                     </p>
+                </div>
+                <button onclick="showProductInfo(3)"><i class="fa-solid fa-plus"></i>VEČ O IZDELKU 3</button>
+            </div>
+        </div>
+
+        <div id="productInfo" style="display: none; margin-block: clamp(10px, 1.59vw, 30px)">
+            <div class="card" id="productCard"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
